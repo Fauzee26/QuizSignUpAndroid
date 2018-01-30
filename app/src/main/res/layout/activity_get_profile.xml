@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fauzi.hilmy.quizsignupandroid.getProfile">
+
+    <TextView
+        android:id="@+id/getUser"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Your Username"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/getFull"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Your Full Name"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/getEmail"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Your Email"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/getPass"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Your Pass"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/getJob"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Your Job"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/getSex"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Your Gender"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/getTempat"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Your Tempat Lahir"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/getTgl"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Your BOD"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/getAddress"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Your Address"
+        android:textSize="25sp" />
+</LinearLayout>

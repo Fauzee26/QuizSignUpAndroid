@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -196,10 +197,23 @@ public class MainActivity extends AppCompatActivity {
                             }else if (itemSex.equalsIgnoreCase("P")) {
                                 hasilSex = "Perempuan";
                             }
+                            String bod = String.valueOf((new StringBuilder().append(day).append("/").append(month).append("/")));
+                            Intent nP = new Intent(getApplicationContext(), getProfile.class);
+                            nP.putExtra("user", aUser);
+                            nP.putExtra("full", aFull);
+                            nP.putExtra("email", aEmail);
+                            nP.putExtra("pass", aPass);
+                            nP.putExtra("gender", hasilSex);
+                            nP.putExtra("job", itemJob);
+                            nP.putExtra("tempat", aTempat);
+                            nP.putExtra("bod", bod);
+                            nP.putExtra("address", aAddress);
 
-                            lblHasil.setText("Halo, " + aUser + ", Full Name : " + aFull + ", Email : " + aEmail + ", Pass : " + aPass + ", Pekerjaan : " +
-                                    itemJob + ", Gender : " + hasilSex + ", Tempat Lahir : " + aTempat + ", Tgl Lahir : " + (new StringBuilder().append(day).append("/")
-                                    .append(month).append("/").append(year)) + ", Address : " + aAddress);
+                            startActivity(nP);
+//                            lblHasil.setText("Halo, " + aUser + ", Full Name : " + aFull + ", Email : " + aEmail + ", Pass : " + aPass + ", Pekerjaan : " +
+//                                    itemJob + ", Gender : " + hasilSex + ", Tempat Lahir : " + aTempat + ", Tgl Lahir : " + (new StringBuilder().append(day).append("/")
+//                                    .append(month).append("/").append(year)) + ", Address : " + aAddress);
+
 
                         }
                     });
